@@ -131,12 +131,20 @@ body {
 }
 
 #theme-toggle {
-  background: none;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: #ffcc00;
   border: none;
-  font-size: 1.4rem;
+  color: #222;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
-  color: white;
-  margin-left: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 1000; /* stays above everything */
 }
 
 .dark {
@@ -178,4 +186,20 @@ body {
 
 .dark form button:hover {
   background: #666;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+  background: #ffd633;
+}
+
+/* Dark mode toggle appearance */
+.dark #theme-toggle {
+  background: #222;
+  color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+}
+
+.dark #theme-toggle:hover {
+  background: #444;
 }
