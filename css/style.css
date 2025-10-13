@@ -121,3 +121,61 @@ footer {
   padding: 10px;
   margin-top: 40px;
 }
+
+
+/* ============================= */
+/* 🌗 DARK MODE SUPPORT */
+/* ============================= */
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+
+.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.dark header {
+  background: #1e1e1e;
+}
+
+.dark nav a {
+  color: #e0e0e0;
+}
+
+.dark nav a:hover, .dark nav a.active {
+  background: #333;
+}
+
+.dark footer {
+  background: #1e1e1e;
+}
+
+.dark .posts article {
+  background: #1e1e1e;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark form input,
+.dark form textarea {
+  background: #222;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark form button {
+  background: #444;
+}
+
+.dark form button:hover {
+  background: #666;
+}
