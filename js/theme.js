@@ -1,4 +1,5 @@
 const themeToggle = document.getElementById("theme-toggle");
+console.log(themeToggle);
 const currentTheme = localStorage.getItem("theme");
 
 // Apply saved theme
