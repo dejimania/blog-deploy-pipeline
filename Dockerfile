@@ -15,7 +15,7 @@ RUN rm -rf ./*
 COPY . .
 
 # Expose port 80 for web traffic
-EXPOSE 80
+EXPOSE 8080
 
 # Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
